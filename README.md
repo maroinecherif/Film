@@ -25,3 +25,16 @@ To start using the Movie App API, you need to obtain an API key by signing up on
   - `sort_by`: Sort movies by release date or rating (optional)
 
 Example Request:
+GET /movies?sort_by=release_date
+Example Response:
+```json
+[
+  {
+    "id": 1,
+    "title": "Movie Title",
+    "releaseDate": "2023-08-15",
+    "rating": 4.5
+    // Other movie properties...
+  },
+  // More movies...
+]
